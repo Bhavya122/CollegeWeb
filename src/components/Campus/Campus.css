@@ -1,0 +1,64 @@
+
+.campus{
+  margin:  auto;
+  padding: 0 100px;
+  position: relative;
+  text-align: center;
+}
+ .next-btn,.back-btn{
+  position: absolute;
+  top: 50%;
+  right: -40px;
+  transform: translateY(-50%);
+  padding:15px ;
+  width: 50px;
+  border-radius: 50%;
+  cursor: pointer;
+  background: navy;
+}
+
+
+.back-btn{
+  right: auto;
+  left: 10px;
+}
+.gallery{
+  overflow: hidden;
+  /* display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 40px; */
+  
+}
+.gallery ul{
+  display: flex;
+  width: 200%;
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+.gallery ul li{
+  list-style: none;
+  padding: 20px;
+  width: 50%;
+}
+
+.gallery img{
+  width: 90%;
+ height: 30vh;
+ margin-left: 10px;
+  border-radius: 10px;
+  /* display: flexbox; */
+
+}
+
+/* media */
+@media(max-width:800px){
+  .gallery{
+    flex-wrap: wrap;
+
+  }
+  .gallery{
+    width: 48%;
+    margin-bottom: 35px;
+  }
+}
